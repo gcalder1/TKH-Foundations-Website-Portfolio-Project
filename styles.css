@@ -1,0 +1,346 @@
+*{
+    line-height: 1.6; /* makes it a little easier to read everything */
+}
+
+/* Background layers START */
+
+html{
+    height: 100%; /* background background color - replace with img later
+    maybe.. */
+    background-color: #495264;
+    
+}
+
+body{
+    height: 100%; /* the space where stuff goes can exist in 100% of this
+    space */
+    margin: 0; 
+    text-align: center;
+    font-family:"DM Sans";
+
+}
+
+div#container{ 
+    background-color: #BFC0CF; /* color of the container where all 
+    stuff will be */
+    width: 720px; /* how fat the container is */
+    margin: 0 auto; /* scaling of container relative to window*/
+    min-height: 100%; /* pushes the container all the way down to bottom
+    of screen */
+    text-align: left; /* everything written within this will be aligned
+    to the left */
+    
+    
+}
+
+div#content{
+    background-color: #BFC0CF; /* color of the space where all stuff will be.
+    this takes care of going past the container limit */
+    padding-top: 0px; /* might keep this? gotta see how i feel about
+    the extra space on the top, was worried would feel too cluttered*/
+    
+    
+}
+
+/* Background layers FINISH */
+
+/* Nav Bar config START */
+.container-navbar{
+    display: flex;
+    justify-content: space-between; /* space between navbar and logo */
+    align-items: center;
+    width: 720px;
+    padding: 5px; /* padding for fancy lines */
+    border-radius: 10px; /* curved border edges */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* shadow effect*/
+    background-color: #BFC0CF; /* color of the nav bar*/
+    position: fixed; /* scrolling effect to stay with view */
+    z-index: 1000; /* the one above all: escanor */
+    transform: translateX(-50%); /* force center based on parent without
+    caring about document flow, blame position: fixed */
+    left: 50%;/* counter the lopsided too far left */
+    
+  }
+  
+  .navbar ul{
+    display: flex; /* make the list items horizontal */
+    list-style-type: none; /* no bullet points */
+    margin: 0; /* makes sure there is not extra margin */
+    padding: 0; /* makes sure there is no extra padding */
+    
+    
+  }
+  
+  .navbar li{
+    margin-right: 25px; /* space between nav choices */
+    
+  }
+  
+  .navbar li:last-child{
+    margin-right: 0; /* no ending extra space - make a habit of this */
+  }
+
+  .navbar li:first-child{
+    padding-left: 25px; /* push it all forward starting from 1st choice */
+  }
+
+  
+  .navbar a{
+    text-decoration: none; /* remove underline from links */
+    color: #222; /* link color */
+  }
+  
+  .logo ul{
+    display:flex;
+    list-style-type: none; /* no bullet points */
+    padding-right: 25px; /* push GC inward */
+    padding-left: 0;
+  }
+
+  .logo a{
+    text-decoration: none;
+    color: #222;
+  }
+/* Nav bar config FINISH */
+
+/* Section Formatting START */
+
+section{ /* this adjusts the space between left and right side of evrythng*/
+    padding-left:25px;
+    padding-right:25px;
+    padding-top: 75px;
+
+}
+
+/* Section Formatting FINISH */
+
+/* Intro START */
+
+.profile-image{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    
+}
+
+.home-image-list-container{
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    gap: 20px; /* makes the space between two things larger */
+    
+}
+
+.intro-list{ /* who i am */
+    list-style-type: none;
+    padding: 0 20px 0 20px; /* leave the other padding or else spacing ew */
+    margin: 0; /* solves the margin issue of being pushed too far left */
+    font-size: 20px;
+    
+    
+}
+
+.sub-list{ /* my three joys */
+    list-style-type: none;
+    padding-left: 20px;
+    font-size: 18px;
+    margin-top: 10px;
+    background: #f5f5f5;
+    border-radius: 10px;
+    
+}
+
+b{
+    font-weight: bold;
+}
+
+/* Intro FINISH */
+
+/* About Me START */
+
+.resume-button{ /* my beautiful divider button */
+    display: flex;
+    justify-content: center;
+    padding: 5px 50px;
+    border: 1px outset buttonborder;
+    border-radius: 5px;
+    color: #BFC0CF;
+    background-color: #222;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.aboutme-experience{
+    display: grid;
+    grid-template-columns: repeat (3, 1fr);
+    gap: 30px;
+    margin: 1rem 0;
+}
+
+.experience-card {
+    /* background: #f5f5f5; */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+}
+
+.aboutme-experience h3 {
+    margin-top: 0;
+    color: #222;
+    text-align: center;
+}
+
+.aboutme-experience p {
+    color: #222;
+}
+
+.aboutme-lists{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 2rem; /*rem will make a space above depending on font size*/
+}
+
+.aboutme-lists h3{
+    color: #222;
+    border-bottom: 2px solid #BFC0CF;
+}
+
+.aboutme-lists ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.aboutme-lists li{
+    margin-bottom: 10px;
+    padding: 8px;
+    background: #f5f5f5;
+    border-radius: 5px;
+}
+
+/* About me FINISH */
+
+/* Projects START */
+
+.projects-content img{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    
+}
+
+.projects-view{
+    display: flex;
+    padding: 25px 0 25px 0;
+    
+}
+
+.projects-view p{
+    padding-left: 50px;
+    
+}
+
+/* Projects FINISH */
+
+
+/* Contact START*/
+
+
+
+.astoria-queens{
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    padding: 0 0 0 0;
+    margin-left: 20px;
+    
+}
+
+.ending-paragraph{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0;
+}
+
+.paragraph-container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-ending{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Because of column, orientation of center
+    is now adjusted 90 degrees, resulting in new center */
+    /* padding: 0 0 0 10; */
+    
+}
+
+::placeholder{
+    color: #8a8a94;
+}
+
+.personal-info input{
+    border-radius: 10px;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 0;
+    background-color: #f5f5f5;
+    color: #BFC0CF;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    margin-top: 20px;
+    
+}
+
+.personal-message input{
+    border-radius: 10px;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 100px;
+    padding-right: 250px;
+    padding-left: 10px;
+    background-color: #f5f5f5;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+}
+.personal-message{
+    margin-top: 20px;
+    
+}
+
+.personal-info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.submit-form{
+    margin-top: 20px;
+    padding: 5px 20px 5px 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: #222;
+    color: #BFC0CF;
+    cursor: pointer;
+
+}
+
+/* Contact FINISH */
+
+/* Bottom Bar START */
+
+.bottom-bar{
+    padding-left: 25px;
+}
