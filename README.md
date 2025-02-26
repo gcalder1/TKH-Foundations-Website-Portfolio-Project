@@ -6,7 +6,7 @@ Welcome to my personal portfolio! As a **Web Developer in-training**, I aim to a
 
 ## 🚀 **Live Demo**
 
-The live version of my portfolio will be hosted on [Netlify](#). 
+The live version of my portfolio will be hosted on [Netlify](https://gcalder1.netlify.app/). 
 
 ---
 
