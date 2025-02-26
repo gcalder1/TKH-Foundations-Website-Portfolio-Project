@@ -54,7 +54,7 @@ div#content{
     padding: 5px; /* padding for fancy lines */
     border-radius: 10px; /* curved border edges */
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1); /* shadow effect*/
-    background-color: #BFC0CF; /* color of the nav bar*/
+    background-color: #d8d9e7d8; /* color of the nav bar*/
     position: fixed; /* scrolling effect to stay with view */
     z-index: 1000; /* the one above all: escanor */
     transform: translateX(-50%); /* force center based on parent without
@@ -303,7 +303,7 @@ b{
     color: #222;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     margin-top: 20px;
-    margin-right: 50%;
+    margin-right: 70%;
     
 }
 
