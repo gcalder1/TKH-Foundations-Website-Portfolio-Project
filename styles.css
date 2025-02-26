@@ -16,7 +16,7 @@ body{
     space */
     margin: 0; 
     text-align: center;
-    font-family:"DM Sans";
+    font-family:"DM Sans", sans-serif;
     
 
 }
@@ -300,24 +300,26 @@ b{
     padding-left: 10px;
     padding-right: 0;
     background-color: #f5f5f5;
-    color: #BFC0CF;
+    color: #222;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
     margin-top: 20px;
+    margin-right: 50%;
     
 }
 
-.personal-message input{
+.personal-message textarea{
     border-radius: 10px;
     border: none;
     padding-top: 10px;
-    padding-bottom: 100px;
-    padding-right: 250px;
     padding-left: 10px;
+    width: 50%;
+    height: 150px;
+    resize: horizontal; /* stretchy */
     background-color: #f5f5f5;
     box-shadow: 0 5px 10px rgba(0,0,0,0.2);
 }
 .personal-message{
-    margin-top: 20px;
+    margin-top: 25px;
     
 }
 
@@ -335,6 +337,16 @@ b{
     background-color: #222;
     color: #BFC0CF;
     cursor: pointer;
+
+}
+
+.personal-info input, .personal-message textarea, 
+.personal-info input::placeholder, 
+.personal-message textarea::placeholder{
+    font-family: "DM Sans", sans-serif;
+
+/* you gotta target EVERY little thing in the type-able
+stuff so that they can all inherit the font type */
 
 }
 
